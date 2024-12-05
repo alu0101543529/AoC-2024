@@ -1,3 +1,13 @@
+/**
+ * AoC 2024: Day 4: Ceres Search
+
+ * @file   day_4_ceres_search.cc
+ * @author Raúl Gonzalez Acosta
+ * @date   04/12/2024
+ * @brief  Find occurrences of "XMAS" and X-MAS patterns in a grid.
+ * @see    https://adventofcode.com/2024/day/4
+ */
+
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -111,7 +121,7 @@ int main(int argc, char* argv[]) {
 
   // Check if the -trace option is provided
   bool trace = false;
-  if (argc > 2 && std::string(argv[2]) == "-trace") { trace = true;}
+  if (argc > 2 && std::string(argv[2]) == "-trace") { trace = true; }
 
   // Open the input file
   std::ifstream inputFile(argv[1]);
