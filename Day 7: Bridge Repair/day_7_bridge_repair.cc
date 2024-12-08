@@ -1,3 +1,13 @@
+/**
+ * AoC 2024: Day 7: Bridge Repair
+
+ * @file   day_7_bridge_repair.cc
+ * @author Raúl Gonzalez Acosta
+ * @date   07/12/2024
+ * @brief  Check if a given equation can be evaluated to a target value.
+ * @see    https://adventofcode.com/2024/day/7
+ */
+
 #include <fstream>
 #include <iostream>
 #include <sstream>
