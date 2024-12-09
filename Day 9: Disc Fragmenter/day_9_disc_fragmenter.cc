@@ -1,3 +1,13 @@
+/**
+ * AoC 2024: Day 9: Disc Fragmenter
+
+ * @file   day_9_disc_fragmenter.cc
+ * @author Raúl Gonzalez Acosta
+ * @date   09/12/2024
+ * @brief  Calculate the checksum of a disk map after compacting the disk.
+ * @see    https://adventofcode.com/2024/day/9
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
