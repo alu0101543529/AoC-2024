@@ -34,18 +34,14 @@ std::vector<int> parseDiskMap(const std::string& diskMap) {
 
 // Function to compact the disk map by moving files to the left
 void compactDisk(std::vector<int>& blocks) {
-  // Position of the first free block
-  int leftIndex = 0; 
-  // Start from the rightmost block
-  int rightIndex = (blocks.size() - 1);
+  // Position of the first free block and the rightmost file block
+  int leftIndex = 0, rightIndex = (blocks.size() - 1);
 
   while (leftIndex < rightIndex) {
     // Find the next free block on the left
     while (leftIndex < blocks.size() && blocks[leftIndex] != -1) { leftIndex++; }
-
     // Find the next file block on the right
     while (rightIndex >= 0 && blocks[rightIndex] == -1) { rightIndex--; }
-
     // If valid indices, move the block
     if (leftIndex < rightIndex) {
       blocks[leftIndex] = blocks[rightIndex];
