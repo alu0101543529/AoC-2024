@@ -45,9 +45,9 @@ void simulateBlinks(std::unordered_map<long long, long long>& stoneCounts, int b
 }
 
 int main(int argc, char* argv[]) {
-    // Check if the input file is provided
+  // Check if the input file is provided
   if (argc < 2) {
-    std::cerr << "Usage: " << argv[0] << " <input_file> [-trace]" << std::endl;
+    std::cerr << "Usage: " << argv[0] << " <input_file>" << std::endl;
     return EXIT_FAILURE;
   }
 
