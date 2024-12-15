@@ -111,7 +111,7 @@ bool isValidEquationConcatenation(long target, const std::vector<long>& numbers)
 int main(int argc, char* argv[]) {
   // Check if the input file is provided
   if (argc < 2) {
-    std::cerr << "Usage: " << argv[0] << " <input_file> [-trace]" << std::endl;
+    std::cerr << "Usage: " << argv[0] << " <input_file>" << std::endl;
     return EXIT_FAILURE;
   }
 

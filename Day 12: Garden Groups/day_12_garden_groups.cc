@@ -66,6 +66,8 @@ int main(int argc, char* argv[]) {
     if (!line.empty()) { garden.push_back(line); }
   }
 
+  inputFile.close();
+
   int rows = garden.size();
   int cols = garden[0].size();
 

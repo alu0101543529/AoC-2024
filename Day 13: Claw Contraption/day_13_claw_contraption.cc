@@ -48,6 +48,8 @@ vector<Machine> parseInput(const string& filename) {
     getline(inputFile, line); // Skip empty line
   }
 
+  inputFile.close();
+
   return machines;
 }
 

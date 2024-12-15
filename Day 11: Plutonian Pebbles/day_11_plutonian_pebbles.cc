@@ -63,6 +63,7 @@ int main(int argc, char* argv[]) {
     return EXIT_FAILURE;
   }
 
+
   std::istringstream iss(line);
   std::unordered_map<long long, long long> stoneCounts;
   long long num;
@@ -73,6 +74,8 @@ int main(int argc, char* argv[]) {
   std::cin >> blinks;
 
   simulateBlinks(stoneCounts, blinks);
+  
+  inputFile.close();
 
   // Output the final result
   long long totalStones = 0;
