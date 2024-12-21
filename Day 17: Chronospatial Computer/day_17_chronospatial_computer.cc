@@ -20,7 +20,7 @@ std::vector<long long> readProgramAndRegisters(const std::string& filename, long
   std::vector<long long> program;
   std::ifstream file(filename);
   if (!file) {
-      std::cerr << "Error: Cannot open file " << filename << std::endl;
+    std::cerr << "Error: Cannot open file " << filename << std::endl;
     exit(EXIT_FAILURE);
   }
 
